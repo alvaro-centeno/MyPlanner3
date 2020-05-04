@@ -25,8 +25,7 @@ $(document).ready(function () {
         };
 
     });
-
-    var planLogs = JSON.parse(localStorage.getItem("planLogs"));
+    var planLogs = JSON.parse(localStorage.getItem("planLogs")) || [];
     // console.log(planLogs);
 
     var areaText = $("textArea[name='text'");
